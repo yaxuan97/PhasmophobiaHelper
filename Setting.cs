@@ -1,5 +1,4 @@
 ﻿using PhasmophobiaHelper.Properties;
-using System.Diagnostics;
 
 namespace PhasmophobiaHelper {
 	public partial class Setting : Form {
@@ -8,11 +7,13 @@ namespace PhasmophobiaHelper {
 			FuckVs();
 			GhostSpeedRadioButtons[Program.window.GhostSpeed].Checked = true;
 			RecordGhostStepKeyTextbox.Text = Util.KeyDataToString(Program.window.RecordGhostStepKeyBinding);
-			ResetGhostStepKeyTextBox.Text = Util.KeyDataToString(Program.window.StopRecordGhostStepKeyBinding);
+			ResetGhostStepKeyTextBox.Text = Util.KeyDataToString(Program.window.ResetRecordGhostStepKeyBinding);
 			TimerKeyTextbox.Text += Util.KeyDataToString(Program.window.TimerKeyBinding);
 			OpacitySlider.Value = (int)(Program.window.Opacity * 100);
 			Opacity = Program.window.Opacity;
 			OpacityTextBox.Text = ((int)(Opacity * 100)).ToString();
+			GhostStepQueueLengthTextBox.Text = Settings.Default.GhostStepQueueLength.ToString();
+			GhostGuessingOffsetTextBox.Text = Settings.Default.GhostGuessingOffset.ToString("f2");
 		}
 		private readonly RadioButton[] GhostSpeedRadioButtons = new RadioButton[] { new RadioButton(), new RadioButton(), new RadioButton(), new RadioButton(), new RadioButton() };
 		/// <summary>
@@ -101,11 +102,11 @@ namespace PhasmophobiaHelper {
 			Settings.Default.Save();
 		}
 		private void ResetGhostStepKey_KeyDown(object sender, KeyEventArgs e) {
-			Program.window.StopRecordGhostStepKeyBinding = e.KeyData;
+			Program.window.ResetRecordGhostStepKeyBinding = e.KeyData;
 		}
 		private void ResetGhostStepKey_KeyUp(object sender, KeyEventArgs e) {
-			ResetGhostStepKeyTextBox.Text = Util.KeyDataToString(Program.window.StopRecordGhostStepKeyBinding);
-			Settings.Default.ResetGhostSpeedKeyBinding = (int)Program.window.StopRecordGhostStepKeyBinding;
+			ResetGhostStepKeyTextBox.Text = Util.KeyDataToString(Program.window.ResetRecordGhostStepKeyBinding);
+			Settings.Default.ResetGhostSpeedKeyBinding = (int)Program.window.ResetRecordGhostStepKeyBinding;
 			Settings.Default.Save();
 		}
 		private void TimerKeyTextbox_KeyDown(object sender, KeyEventArgs e) {
@@ -162,24 +163,12 @@ namespace PhasmophobiaHelper {
 			TimerKeyTextbox.Focus();
 		}
 
-
 		private void OpacityTextBox_KeyPress(object sender, KeyPressEventArgs e) {
 			if (e.KeyChar == 13) {
 				OpacitySlider.Focus();
-			}
-			if (char.IsControl(e.KeyChar) || char.IsDigit(e.KeyChar)) {
-				return;
-			}
-			e.Handled = true;
-		}
-
-		private void OpacityTextBox_TextChanged(object sender, EventArgs e) {
-			int iMax = 100;
-			if (OpacityTextBox.Text != null && OpacityTextBox.Text != "") {
-				if (int.Parse(OpacityTextBox.Text) > iMax) {
-					OpacityTextBox.Text = iMax.ToString();
-				}
-				OpacitySlider.Value = int.Parse(OpacityTextBox.Text);
+				int op = int.Parse(OpacityTextBox.Text);
+				if (op > OpacitySlider.Minimum && op < OpacitySlider.Maximum)
+					OpacitySlider.Value = op;
 			}
 		}
 
@@ -193,6 +182,35 @@ namespace PhasmophobiaHelper {
 			Program.window.Opacity = Opacity;
 			Settings.Default.Opacity = Opacity;
 			Settings.Default.Save();
+		}
+
+		private void OpacityTextBox_Leave(object sender, EventArgs e) {
+			OpacityTextBox_KeyPress(sender, new KeyPressEventArgs((char)13));
+		}
+
+		private void GhostStepQueueLengthTextBox_KeyPress(object sender, KeyPressEventArgs e) {
+			if (e.KeyChar == 13) {
+				var length = int.Parse(GhostStepQueueLengthTextBox.Text);
+				Program.window.GhostStepQueueLength = length;
+				Settings.Default.GhostStepQueueLength = length;
+				Settings.Default.Save();
+			}
+		}
+
+		private void GhostStepQueueLengthTextBox_Leave(object sender, EventArgs e) {
+			GhostStepQueueLengthTextBox_KeyPress(sender, new KeyPressEventArgs((char)13));
+		}
+
+		private void GhostGuessingOffsetTextBox_KeyPress(object sender, KeyPressEventArgs e) {
+			if (e.KeyChar == 13) {
+				var offset = decimal.Parse(GhostGuessingOffsetTextBox.Text);
+				Program.window.GhostGuessingOffset = offset;
+				Settings.Default.GhostGuessingOffset = offset;
+				Settings.Default.Save();
+			}
+		}
+		private void GhostGuessingOffsetTextBox_Leave(object sender, EventArgs e) {
+			GhostGuessingOffsetTextBox_KeyPress(sender, new KeyPressEventArgs((char)13));
 		}
 	}
 }

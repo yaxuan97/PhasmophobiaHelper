@@ -17,5 +17,11 @@
     <Setting Name="Opacity" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0.95</Value>
     </Setting>
+    <Setting Name="GhostStepQueueLength" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="GhostGuessingOffset" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.1</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

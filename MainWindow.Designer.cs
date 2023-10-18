@@ -28,17 +28,19 @@
 			CalcGhostSpeedGroup = new GroupBox();
 			TopMostButton = new Button();
 			SettingButton = new Button();
-			label2 = new Label();
-			label1 = new Label();
+			GhostGuessingResultLabel = new Label();
 			SpeedResultLabel = new Label();
-			FullSpeedLabel = new Label();
 			NormalSpeedLabel = new Label();
 			SpeedLabel = new Label();
 			TimerGroup = new GroupBox();
 			TimerTextLabel = new Label();
-			TimerProgress = new ProgressBar();
-			GhostTimer = new System.Windows.Forms.Timer(components);
+			TimerProgress = new NoDelayprogress();
+			GhostIncenseColdDownLabel = new Label();
+			SpiritIncenseColdDownLabel = new Label();
+			DemonIncenseColdDownLabel = new Label();
+			GhostHuntingColdDownLabel = new Label();
 			DemonHuntingColdDownLabel = new Label();
+			GhostTimer = new System.Windows.Forms.Timer(components);
 			CalcGhostSpeedGroup.SuspendLayout();
 			TimerGroup.SuspendLayout();
 			SuspendLayout();
@@ -47,10 +49,8 @@
 			// 
 			CalcGhostSpeedGroup.Controls.Add(TopMostButton);
 			CalcGhostSpeedGroup.Controls.Add(SettingButton);
-			CalcGhostSpeedGroup.Controls.Add(label2);
-			CalcGhostSpeedGroup.Controls.Add(label1);
+			CalcGhostSpeedGroup.Controls.Add(GhostGuessingResultLabel);
 			CalcGhostSpeedGroup.Controls.Add(SpeedResultLabel);
-			CalcGhostSpeedGroup.Controls.Add(FullSpeedLabel);
 			CalcGhostSpeedGroup.Controls.Add(NormalSpeedLabel);
 			CalcGhostSpeedGroup.Controls.Add(SpeedLabel);
 			resources.ApplyResources(CalcGhostSpeedGroup, "CalcGhostSpeedGroup");
@@ -71,25 +71,15 @@
 			SettingButton.UseVisualStyleBackColor = true;
 			SettingButton.Click += SettingButton_Click;
 			// 
-			// label2
+			// GhostGuessingResultLabel
 			// 
-			resources.ApplyResources(label2, "label2");
-			label2.Name = "label2";
-			// 
-			// label1
-			// 
-			resources.ApplyResources(label1, "label1");
-			label1.Name = "label1";
+			resources.ApplyResources(GhostGuessingResultLabel, "GhostGuessingResultLabel");
+			GhostGuessingResultLabel.Name = "GhostGuessingResultLabel";
 			// 
 			// SpeedResultLabel
 			// 
 			resources.ApplyResources(SpeedResultLabel, "SpeedResultLabel");
 			SpeedResultLabel.Name = "SpeedResultLabel";
-			// 
-			// FullSpeedLabel
-			// 
-			resources.ApplyResources(FullSpeedLabel, "FullSpeedLabel");
-			FullSpeedLabel.Name = "FullSpeedLabel";
 			// 
 			// NormalSpeedLabel
 			// 
@@ -103,9 +93,13 @@
 			// 
 			// TimerGroup
 			// 
-			TimerGroup.Controls.Add(DemonHuntingColdDownLabel);
 			TimerGroup.Controls.Add(TimerTextLabel);
 			TimerGroup.Controls.Add(TimerProgress);
+			TimerGroup.Controls.Add(GhostIncenseColdDownLabel);
+			TimerGroup.Controls.Add(SpiritIncenseColdDownLabel);
+			TimerGroup.Controls.Add(DemonIncenseColdDownLabel);
+			TimerGroup.Controls.Add(GhostHuntingColdDownLabel);
+			TimerGroup.Controls.Add(DemonHuntingColdDownLabel);
 			resources.ApplyResources(TimerGroup, "TimerGroup");
 			TimerGroup.Name = "TimerGroup";
 			TimerGroup.TabStop = false;
@@ -119,21 +113,49 @@
 			// 
 			// TimerProgress
 			// 
+			TimerProgress.BackColor = SystemColors.HotTrack;
+			TimerProgress.ForeColor = Color.Gold;
 			resources.ApplyResources(TimerProgress, "TimerProgress");
-			TimerProgress.MarqueeAnimationSpeed = 1000;
-			TimerProgress.Maximum = 180;
+			TimerProgress.MaxValue = 180;
+			TimerProgress.MinValue = 0;
 			TimerProgress.Name = "TimerProgress";
 			TimerProgress.Step = 1;
+			TimerProgress.Value = 0;
+			// 
+			// GhostIncenseColdDownLabel
+			// 
+			resources.ApplyResources(GhostIncenseColdDownLabel, "GhostIncenseColdDownLabel");
+			GhostIncenseColdDownLabel.ForeColor = Color.ForestGreen;
+			GhostIncenseColdDownLabel.Name = "GhostIncenseColdDownLabel";
+			// 
+			// SpiritIncenseColdDownLabel
+			// 
+			resources.ApplyResources(SpiritIncenseColdDownLabel, "SpiritIncenseColdDownLabel");
+			SpiritIncenseColdDownLabel.ForeColor = Color.ForestGreen;
+			SpiritIncenseColdDownLabel.Name = "SpiritIncenseColdDownLabel";
+			// 
+			// DemonIncenseColdDownLabel
+			// 
+			resources.ApplyResources(DemonIncenseColdDownLabel, "DemonIncenseColdDownLabel");
+			DemonIncenseColdDownLabel.ForeColor = Color.ForestGreen;
+			DemonIncenseColdDownLabel.Name = "DemonIncenseColdDownLabel";
+			// 
+			// GhostHuntingColdDownLabel
+			// 
+			resources.ApplyResources(GhostHuntingColdDownLabel, "GhostHuntingColdDownLabel");
+			GhostHuntingColdDownLabel.ForeColor = Color.ForestGreen;
+			GhostHuntingColdDownLabel.Name = "GhostHuntingColdDownLabel";
+			// 
+			// DemonHuntingColdDownLabel
+			// 
+			resources.ApplyResources(DemonHuntingColdDownLabel, "DemonHuntingColdDownLabel");
+			DemonHuntingColdDownLabel.ForeColor = Color.ForestGreen;
+			DemonHuntingColdDownLabel.Name = "DemonHuntingColdDownLabel";
 			// 
 			// GhostTimer
 			// 
 			GhostTimer.Interval = 1000;
 			GhostTimer.Tick += GhostTimer_Tick;
-			// 
-			// DemonHuntingColdDownLabel
-			// 
-			resources.ApplyResources(DemonHuntingColdDownLabel, "DemonHuntingColdDownLabel");
-			DemonHuntingColdDownLabel.Name = "DemonHuntingColdDownLabel";
 			// 
 			// MainWindow
 			// 
@@ -155,18 +177,20 @@
 
 		#endregion
 		private GroupBox CalcGhostSpeedGroup;
-		private Label FullSpeedLabel;
 		private Label NormalSpeedLabel;
 		private Label SpeedLabel;
-		private Label label2;
-		private Label label1;
+		private Label GhostGuessingResultLabel;
 		private Label SpeedResultLabel;
 		private GroupBox TimerGroup;
-		private ProgressBar TimerProgress;
-		private Label TimerTextLabel;
 		private System.Windows.Forms.Timer GhostTimer;
 		private Button SettingButton;
 		private Button TopMostButton;
 		private Label DemonHuntingColdDownLabel;
+		private Label GhostHuntingColdDownLabel;
+		private Label DemonIncenseColdDownLabel;
+		private Label GhostIncenseColdDownLabel;
+		private Label SpiritIncenseColdDownLabel;
+		private NoDelayprogress TimerProgress;
+		private Label TimerTextLabel;
 	}
 }

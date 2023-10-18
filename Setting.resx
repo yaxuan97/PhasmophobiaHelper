@@ -117,110 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;TimerKeyTextbox.Name" xml:space="preserve">
-    <value>TimerKeyTextbox</value>
-  </data>
-  <data name="&gt;&gt;TimerKeyTextbox.Type" xml:space="preserve">
-    <value>PhasmophobiaHelper.AlignableTextBox, PhasmophobiaHelper, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;TimerKeyTextbox.Parent" xml:space="preserve">
-    <value>KeyBindingGroup</value>
-  </data>
-  <data name="&gt;&gt;TimerKeyTextbox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;TimerLabel.Name" xml:space="preserve">
-    <value>TimerLabel</value>
-  </data>
-  <data name="&gt;&gt;TimerLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TimerLabel.Parent" xml:space="preserve">
-    <value>KeyBindingGroup</value>
-  </data>
-  <data name="&gt;&gt;TimerLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ResetGhostStepKeyTextBox.Name" xml:space="preserve">
-    <value>ResetGhostStepKeyTextBox</value>
-  </data>
-  <data name="&gt;&gt;ResetGhostStepKeyTextBox.Type" xml:space="preserve">
-    <value>PhasmophobiaHelper.AlignableTextBox, PhasmophobiaHelper, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ResetGhostStepKeyTextBox.Parent" xml:space="preserve">
-    <value>KeyBindingGroup</value>
-  </data>
-  <data name="&gt;&gt;ResetGhostStepKeyTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;ResetRecordGhostStepLabel.Name" xml:space="preserve">
-    <value>ResetRecordGhostStepLabel</value>
-  </data>
-  <data name="&gt;&gt;ResetRecordGhostStepLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ResetRecordGhostStepLabel.Parent" xml:space="preserve">
-    <value>KeyBindingGroup</value>
-  </data>
-  <data name="&gt;&gt;ResetRecordGhostStepLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;RecordGhostStepKeyTextbox.Name" xml:space="preserve">
-    <value>RecordGhostStepKeyTextbox</value>
-  </data>
-  <data name="&gt;&gt;RecordGhostStepKeyTextbox.Type" xml:space="preserve">
-    <value>PhasmophobiaHelper.AlignableTextBox, PhasmophobiaHelper, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;RecordGhostStepKeyTextbox.Parent" xml:space="preserve">
-    <value>KeyBindingGroup</value>
-  </data>
-  <data name="&gt;&gt;RecordGhostStepKeyTextbox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;RecordGhostStepLabel.Name" xml:space="preserve">
-    <value>RecordGhostStepLabel</value>
-  </data>
-  <data name="&gt;&gt;RecordGhostStepLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RecordGhostStepLabel.Parent" xml:space="preserve">
-    <value>KeyBindingGroup</value>
-  </data>
-  <data name="&gt;&gt;RecordGhostStepLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="KeyBindingGroup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 78</value>
-  </data>
-  <data name="KeyBindingGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>349, 180</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="KeyBindingGroup.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="KeyBindingGroup.Text" xml:space="preserve">
-    <value>快捷键设置</value>
-  </data>
-  <data name="&gt;&gt;KeyBindingGroup.Name" xml:space="preserve">
-    <value>KeyBindingGroup</value>
-  </data>
-  <data name="&gt;&gt;KeyBindingGroup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;KeyBindingGroup.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;KeyBindingGroup.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="TimerKeyTextbox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei UI, 9pt</value>
   </data>
   <data name="TimerKeyTextbox.Location" type="System.Drawing.Point, System.Drawing">
     <value>130, 120</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="TimerKeyTextbox.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -405,6 +309,30 @@
   <data name="&gt;&gt;RecordGhostStepLabel.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="KeyBindingGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 78</value>
+  </data>
+  <data name="KeyBindingGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 180</value>
+  </data>
+  <data name="KeyBindingGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="KeyBindingGroup.Text" xml:space="preserve">
+    <value>快捷键设置</value>
+  </data>
+  <data name="&gt;&gt;KeyBindingGroup.Name" xml:space="preserve">
+    <value>KeyBindingGroup</value>
+  </data>
+  <data name="&gt;&gt;KeyBindingGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KeyBindingGroup.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;KeyBindingGroup.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="GhostSpeedGroup.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
   </data>
@@ -427,16 +355,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GhostSpeedGroup.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="ReturnButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei UI, 24pt</value>
   </data>
   <data name="ReturnButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 78</value>
+    <value>367, 170</value>
   </data>
   <data name="ReturnButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 180</value>
+    <value>245, 88</value>
   </data>
   <data name="ReturnButton.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -454,7 +382,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ReturnButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="PercentLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -496,7 +424,7 @@
     <value>OpacityTextBox</value>
   </data>
   <data name="&gt;&gt;OpacityTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>PhasmophobiaHelper.DigitalIntTextBox, PhasmophobiaHelper, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;OpacityTextBox.Parent" xml:space="preserve">
     <value>OpacityGroup</value>
@@ -550,6 +478,132 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OpacityGroup.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GhostGuessingOffsetTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 55</value>
+  </data>
+  <data name="GhostGuessingOffsetTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 23</value>
+  </data>
+  <data name="GhostGuessingOffsetTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;GhostGuessingOffsetTextBox.Name" xml:space="preserve">
+    <value>GhostGuessingOffsetTextBox</value>
+  </data>
+  <data name="&gt;&gt;GhostGuessingOffsetTextBox.Type" xml:space="preserve">
+    <value>PhasmophobiaHelper.DigitalIntTextBox, PhasmophobiaHelper, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;GhostGuessingOffsetTextBox.Parent" xml:space="preserve">
+    <value>CustomSettingGroup</value>
+  </data>
+  <data name="&gt;&gt;GhostGuessingOffsetTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GhostGuessingOffsetLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="GhostGuessingOffsetLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 50</value>
+  </data>
+  <data name="GhostGuessingOffsetLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 32</value>
+  </data>
+  <data name="GhostGuessingOffsetLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="GhostGuessingOffsetLabel.Text" xml:space="preserve">
+    <value>鬼魂推测允许误差</value>
+  </data>
+  <data name="GhostGuessingOffsetLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;GhostGuessingOffsetLabel.Name" xml:space="preserve">
+    <value>GhostGuessingOffsetLabel</value>
+  </data>
+  <data name="&gt;&gt;GhostGuessingOffsetLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GhostGuessingOffsetLabel.Parent" xml:space="preserve">
+    <value>CustomSettingGroup</value>
+  </data>
+  <data name="&gt;&gt;GhostGuessingOffsetLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GhostStepQueueLengthTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 24</value>
+  </data>
+  <data name="GhostStepQueueLengthTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 23</value>
+  </data>
+  <data name="GhostStepQueueLengthTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;GhostStepQueueLengthTextBox.Name" xml:space="preserve">
+    <value>GhostStepQueueLengthTextBox</value>
+  </data>
+  <data name="&gt;&gt;GhostStepQueueLengthTextBox.Type" xml:space="preserve">
+    <value>PhasmophobiaHelper.DigitalIntTextBox, PhasmophobiaHelper, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;GhostStepQueueLengthTextBox.Parent" xml:space="preserve">
+    <value>CustomSettingGroup</value>
+  </data>
+  <data name="&gt;&gt;GhostStepQueueLengthTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="GhostStepQueueLengthLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="GhostStepQueueLengthLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
+  </data>
+  <data name="GhostStepQueueLengthLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 32</value>
+  </data>
+  <data name="GhostStepQueueLengthLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="GhostStepQueueLengthLabel.Text" xml:space="preserve">
+    <value>鬼魂脚步队列长度</value>
+  </data>
+  <data name="GhostStepQueueLengthLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;GhostStepQueueLengthLabel.Name" xml:space="preserve">
+    <value>GhostStepQueueLengthLabel</value>
+  </data>
+  <data name="&gt;&gt;GhostStepQueueLengthLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GhostStepQueueLengthLabel.Parent" xml:space="preserve">
+    <value>CustomSettingGroup</value>
+  </data>
+  <data name="&gt;&gt;GhostStepQueueLengthLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CustomSettingGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>367, 78</value>
+  </data>
+  <data name="CustomSettingGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 86</value>
+  </data>
+  <data name="CustomSettingGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="CustomSettingGroup.Text" xml:space="preserve">
+    <value>其他设置</value>
+  </data>
+  <data name="&gt;&gt;CustomSettingGroup.Name" xml:space="preserve">
+    <value>CustomSettingGroup</value>
+  </data>
+  <data name="&gt;&gt;CustomSettingGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CustomSettingGroup.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CustomSettingGroup.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -559,7 +613,7 @@
     <value>7, 17</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>619, 393</value>
+    <value>619, 354</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>设置</value>

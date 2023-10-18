@@ -82,5 +82,29 @@ namespace PhasmophobiaHelper.Properties {
                 this["Opacity"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10")]
+        public int GhostStepQueueLength {
+            get {
+                return ((int)(this["GhostStepQueueLength"]));
+            }
+            set {
+                this["GhostStepQueueLength"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.1")]
+        public decimal GhostGuessingOffset {
+            get {
+                return ((decimal)(this["GhostGuessingOffset"]));
+            }
+            set {
+                this["GhostGuessingOffset"] = value;
+            }
+        }
     }
 }

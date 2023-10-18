@@ -35,11 +35,17 @@
 			ReturnButton = new Button();
 			OpacityGroup = new GroupBox();
 			PercentLabel = new Label();
-			OpacityTextBox = new TextBox();
+			OpacityTextBox = new DigitalIntTextBox();
 			OpacitySlider = new TrackBar();
+			CustomSettingGroup = new GroupBox();
+			GhostGuessingOffsetTextBox = new DigitalRealTextBox();
+			GhostGuessingOffsetLabel = new Label();
+			GhostStepQueueLengthTextBox = new DigitalIntTextBox();
+			GhostStepQueueLengthLabel = new Label();
 			KeyBindingGroup.SuspendLayout();
 			OpacityGroup.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)OpacitySlider).BeginInit();
+			CustomSettingGroup.SuspendLayout();
 			SuspendLayout();
 			// 
 			// KeyBindingGroup
@@ -126,9 +132,10 @@
 			// OpacityTextBox
 			// 
 			resources.ApplyResources(OpacityTextBox, "OpacityTextBox");
+			OpacityTextBox.MaxValue = int.MaxValue;
 			OpacityTextBox.Name = "OpacityTextBox";
-			OpacityTextBox.TextChanged += OpacityTextBox_TextChanged;
 			OpacityTextBox.KeyPress += OpacityTextBox_KeyPress;
+			OpacityTextBox.Leave += OpacityTextBox_Leave;
 			// 
 			// OpacitySlider
 			// 
@@ -139,10 +146,46 @@
 			OpacitySlider.Value = 50;
 			OpacitySlider.ValueChanged += OpacitySlider_ValueChanged;
 			// 
+			// CustomSettingGroup
+			// 
+			CustomSettingGroup.Controls.Add(GhostGuessingOffsetTextBox);
+			CustomSettingGroup.Controls.Add(GhostGuessingOffsetLabel);
+			CustomSettingGroup.Controls.Add(GhostStepQueueLengthTextBox);
+			CustomSettingGroup.Controls.Add(GhostStepQueueLengthLabel);
+			resources.ApplyResources(CustomSettingGroup, "CustomSettingGroup");
+			CustomSettingGroup.Name = "CustomSettingGroup";
+			CustomSettingGroup.TabStop = false;
+			// 
+			// GhostGuessingOffsetTextBox
+			// 
+			resources.ApplyResources(GhostGuessingOffsetTextBox, "GhostGuessingOffsetTextBox");
+			GhostGuessingOffsetTextBox.Name = "GhostGuessingOffsetTextBox";
+			GhostGuessingOffsetTextBox.KeyPress += GhostGuessingOffsetTextBox_KeyPress;
+			GhostGuessingOffsetTextBox.Leave += GhostGuessingOffsetTextBox_Leave;
+			// 
+			// GhostGuessingOffsetLabel
+			// 
+			resources.ApplyResources(GhostGuessingOffsetLabel, "GhostGuessingOffsetLabel");
+			GhostGuessingOffsetLabel.Name = "GhostGuessingOffsetLabel";
+			// 
+			// GhostStepQueueLengthTextBox
+			// 
+			resources.ApplyResources(GhostStepQueueLengthTextBox, "GhostStepQueueLengthTextBox");
+			GhostStepQueueLengthTextBox.MaxValue = int.MaxValue;
+			GhostStepQueueLengthTextBox.Name = "GhostStepQueueLengthTextBox";
+			GhostStepQueueLengthTextBox.KeyPress += GhostStepQueueLengthTextBox_KeyPress;
+			GhostStepQueueLengthTextBox.Leave += GhostStepQueueLengthTextBox_Leave;
+			// 
+			// GhostStepQueueLengthLabel
+			// 
+			resources.ApplyResources(GhostStepQueueLengthLabel, "GhostStepQueueLengthLabel");
+			GhostStepQueueLengthLabel.Name = "GhostStepQueueLengthLabel";
+			// 
 			// Setting
 			// 
 			resources.ApplyResources(this, "$this");
 			AutoScaleMode = AutoScaleMode.Font;
+			Controls.Add(CustomSettingGroup);
 			Controls.Add(OpacityGroup);
 			Controls.Add(ReturnButton);
 			Controls.Add(KeyBindingGroup);
@@ -156,6 +199,8 @@
 			OpacityGroup.ResumeLayout(false);
 			OpacityGroup.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)OpacitySlider).EndInit();
+			CustomSettingGroup.ResumeLayout(false);
+			CustomSettingGroup.PerformLayout();
 			ResumeLayout(false);
 		}
 
@@ -172,6 +217,11 @@
 		private GroupBox OpacityGroup;
 		private TrackBar OpacitySlider;
 		private Label PercentLabel;
-		private TextBox OpacityTextBox;
+		private DigitalIntTextBox OpacityTextBox;
+		private GroupBox CustomSettingGroup;
+		private Label GhostStepQueueLengthLabel;
+		private DigitalIntTextBox GhostStepQueueLengthTextBox;
+		private DigitalRealTextBox GhostGuessingOffsetTextBox;
+		private Label GhostGuessingOffsetLabel;
 	}
 }
