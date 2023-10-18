@@ -5,11 +5,11 @@
 		}
 
 		private void BilibiliLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
-			System.Diagnostics.Process.Start("https://space.bilibili.com/8563083");
+			System.Diagnostics.Process.Start("explorer.exe", "https://space.bilibili.com/8563083");
 		}
 
 		private void GithubLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
-			System.Diagnostics.Process.Start("https://github.com/yaxuan97/PhasmophobiaHelper");
+			System.Diagnostics.Process.Start("explorer.exe", "https://github.com/yaxuan97/PhasmophobiaHelper");
 		}
 	}
 }
