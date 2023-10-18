@@ -4,7 +4,7 @@ namespace PhasmophobiaHelper {
 	public partial class Setting : Form {
 		public Setting() {
 			InitializeComponent();
-			FuckVs();
+			CustomInitialize();
 			GhostSpeedRadioButtons[Program.window.GhostSpeed].Checked = true;
 			RecordGhostStepKeyTextbox.Text = Util.KeyDataToString(Program.window.RecordGhostStepKeyBinding);
 			ResetGhostStepKeyTextBox.Text = Util.KeyDataToString(Program.window.ResetRecordGhostStepKeyBinding);
@@ -16,10 +16,8 @@ namespace PhasmophobiaHelper {
 			GhostGuessingOffsetTextBox.Text = Settings.Default.GhostGuessingOffset.ToString("f2");
 		}
 		private readonly RadioButton[] GhostSpeedRadioButtons = new RadioButton[] { new RadioButton(), new RadioButton(), new RadioButton(), new RadioButton(), new RadioButton() };
-		/// <summary>
-		///  Fuck VS: Don't Change My Code!!!
-		/// </summary>
-		private void FuckVs() {
+
+		private void CustomInitialize() {
 			RecordGhostStepKeyTextbox.AutoSize = false;
 			RecordGhostStepKeyTextbox.Height = 32;
 			ResetGhostStepKeyTextBox.AutoSize = false;

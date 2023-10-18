@@ -331,7 +331,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;KeyBindingGroup.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="GhostSpeedGroup.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
@@ -355,16 +355,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GhostSpeedGroup.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="ReturnButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei UI, 24pt</value>
   </data>
   <data name="ReturnButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 170</value>
+    <value>511, 170</value>
   </data>
   <data name="ReturnButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 88</value>
+    <value>101, 88</value>
   </data>
   <data name="ReturnButton.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -382,7 +382,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ReturnButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="PercentLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -478,7 +478,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OpacityGroup.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="GhostGuessingOffsetTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>117, 55</value>
@@ -493,7 +493,7 @@
     <value>GhostGuessingOffsetTextBox</value>
   </data>
   <data name="&gt;&gt;GhostGuessingOffsetTextBox.Type" xml:space="preserve">
-    <value>PhasmophobiaHelper.DigitalIntTextBox, PhasmophobiaHelper, Culture=neutral, PublicKeyToken=null</value>
+    <value>PhasmophobiaHelper.DigitalRealTextBox, PhasmophobiaHelper, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;GhostGuessingOffsetTextBox.Parent" xml:space="preserve">
     <value>CustomSettingGroup</value>
@@ -604,6 +604,36 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CustomSettingGroup.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 24pt</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>367, 170</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 88</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

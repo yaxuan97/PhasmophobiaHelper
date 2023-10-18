@@ -42,6 +42,7 @@
 			GhostGuessingOffsetLabel = new Label();
 			GhostStepQueueLengthTextBox = new DigitalIntTextBox();
 			GhostStepQueueLengthLabel = new Label();
+			button1 = new Button();
 			KeyBindingGroup.SuspendLayout();
 			OpacityGroup.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)OpacitySlider).BeginInit();
@@ -181,10 +182,17 @@
 			resources.ApplyResources(GhostStepQueueLengthLabel, "GhostStepQueueLengthLabel");
 			GhostStepQueueLengthLabel.Name = "GhostStepQueueLengthLabel";
 			// 
+			// button1
+			// 
+			resources.ApplyResources(button1, "button1");
+			button1.Name = "button1";
+			button1.UseVisualStyleBackColor = true;
+			// 
 			// Setting
 			// 
 			resources.ApplyResources(this, "$this");
 			AutoScaleMode = AutoScaleMode.Font;
+			Controls.Add(button1);
 			Controls.Add(CustomSettingGroup);
 			Controls.Add(OpacityGroup);
 			Controls.Add(ReturnButton);
@@ -223,5 +231,6 @@
 		private DigitalIntTextBox GhostStepQueueLengthTextBox;
 		private DigitalRealTextBox GhostGuessingOffsetTextBox;
 		private Label GhostGuessingOffsetLabel;
+		private Button button1;
 	}
 }

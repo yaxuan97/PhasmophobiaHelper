@@ -23,7 +23,7 @@ namespace PhasmophobiaHelper {
 
 		public MainWindow() {
 			InitializeComponent();
-			FuckVs();
+			CustomInitailize();
 			k_hook.KeyDownEvent += new KeyEventHandler(Hook_KeyDown);//¹³×¡¼ü°´ÏÂ
 			k_hook.Start();
 			GhostSpeed = Settings.Default.GhostSpeed;
@@ -35,11 +35,7 @@ namespace PhasmophobiaHelper {
 			GhostGuessingOffset = Settings.Default.GhostGuessingOffset;
 			TopMost = false;
 		}
-
-		/// <summary>
-		///  Fuck VS: Don't Change My Code!!!
-		/// </summary>
-		private void FuckVs() {
+		private void CustomInitailize() {
 
 		}
 
