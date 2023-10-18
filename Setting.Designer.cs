@@ -42,7 +42,7 @@
 			GhostGuessingOffsetLabel = new Label();
 			GhostStepQueueLengthTextBox = new DigitalIntTextBox();
 			GhostStepQueueLengthLabel = new Label();
-			button1 = new Button();
+			CopyrightButton = new Button();
 			KeyBindingGroup.SuspendLayout();
 			OpacityGroup.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)OpacitySlider).BeginInit();
@@ -182,22 +182,24 @@
 			resources.ApplyResources(GhostStepQueueLengthLabel, "GhostStepQueueLengthLabel");
 			GhostStepQueueLengthLabel.Name = "GhostStepQueueLengthLabel";
 			// 
-			// button1
+			// CopyrightButton
 			// 
-			resources.ApplyResources(button1, "button1");
-			button1.Name = "button1";
-			button1.UseVisualStyleBackColor = true;
+			resources.ApplyResources(CopyrightButton, "CopyrightButton");
+			CopyrightButton.Name = "CopyrightButton";
+			CopyrightButton.UseVisualStyleBackColor = true;
+			CopyrightButton.Click += CopyrightButton_Click;
 			// 
 			// Setting
 			// 
 			resources.ApplyResources(this, "$this");
 			AutoScaleMode = AutoScaleMode.Font;
-			Controls.Add(button1);
+			Controls.Add(CopyrightButton);
 			Controls.Add(CustomSettingGroup);
 			Controls.Add(OpacityGroup);
 			Controls.Add(ReturnButton);
 			Controls.Add(KeyBindingGroup);
 			Controls.Add(GhostSpeedGroup);
+			FormBorderStyle = FormBorderStyle.FixedDialog;
 			MaximizeBox = false;
 			MinimizeBox = false;
 			Name = "Setting";
@@ -231,6 +233,6 @@
 		private DigitalIntTextBox GhostStepQueueLengthTextBox;
 		private DigitalRealTextBox GhostGuessingOffsetTextBox;
 		private Label GhostGuessingOffsetLabel;
-		private Button button1;
+		private Button CopyrightButton;
 	}
 }

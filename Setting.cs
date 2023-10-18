@@ -2,6 +2,7 @@
 
 namespace PhasmophobiaHelper {
 	public partial class Setting : Form {
+		public Copyright? copyright;
 		public Setting() {
 			InitializeComponent();
 			CustomInitialize();
@@ -209,6 +210,11 @@ namespace PhasmophobiaHelper {
 		}
 		private void GhostGuessingOffsetTextBox_Leave(object sender, EventArgs e) {
 			GhostGuessingOffsetTextBox_KeyPress(sender, new KeyPressEventArgs((char)13));
+		}
+
+		private void CopyrightButton_Click(object sender, EventArgs e) {
+			copyright ??= new Copyright();
+			copyright.ShowDialog();
 		}
 	}
 }

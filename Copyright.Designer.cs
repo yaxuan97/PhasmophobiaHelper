@@ -23,49 +23,50 @@
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent() {
-			label1 = new Label();
-			linkLabel1 = new LinkLabel();
-			linkLabel2 = new LinkLabel();
+			CopyrightLabel = new Label();
+			BilibiliLink = new LinkLabel();
+			GithubLink = new LinkLabel();
 			SuspendLayout();
 			// 
-			// label1
+			// CopyrightLabel
 			// 
-			label1.AutoSize = true;
-			label1.Location = new Point(11, 16);
-			label1.Name = "label1";
-			label1.Size = new Size(206, 17);
-			label1.TabIndex = 0;
-			label1.Text = "由yaxuan97制作。转发请注意版权。";
+			CopyrightLabel.AutoSize = true;
+			CopyrightLabel.Location = new Point(11, 16);
+			CopyrightLabel.Name = "CopyrightLabel";
+			CopyrightLabel.Size = new Size(206, 17);
+			CopyrightLabel.TabIndex = 0;
+			CopyrightLabel.Text = "由yaxuan97制作。转发请注意版权。";
 			// 
-			// linkLabel1
+			// BilibiliLink
 			// 
-			linkLabel1.AutoSize = true;
-			linkLabel1.Location = new Point(11, 51);
-			linkLabel1.Name = "linkLabel1";
-			linkLabel1.Size = new Size(70, 17);
-			linkLabel1.TabIndex = 1;
-			linkLabel1.TabStop = true;
-			linkLabel1.Text = "Bilibili 主页";
-			linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+			BilibiliLink.AutoSize = true;
+			BilibiliLink.Location = new Point(11, 51);
+			BilibiliLink.Name = "BilibiliLink";
+			BilibiliLink.Size = new Size(70, 17);
+			BilibiliLink.TabIndex = 1;
+			BilibiliLink.TabStop = true;
+			BilibiliLink.Text = "Bilibili 主页";
+			BilibiliLink.LinkClicked += BilibiliLink_LinkClicked;
 			// 
-			// linkLabel2
+			// GithubLink
 			// 
-			linkLabel2.AutoSize = true;
-			linkLabel2.Location = new Point(87, 51);
-			linkLabel2.Name = "linkLabel2";
-			linkLabel2.Size = new Size(70, 17);
-			linkLabel2.TabIndex = 2;
-			linkLabel2.TabStop = true;
-			linkLabel2.Text = "Bilibili 主页";
+			GithubLink.AutoSize = true;
+			GithubLink.Location = new Point(87, 51);
+			GithubLink.Name = "GithubLink";
+			GithubLink.Size = new Size(46, 17);
+			GithubLink.TabIndex = 2;
+			GithubLink.TabStop = true;
+			GithubLink.Text = "Github";
+			GithubLink.LinkClicked += GithubLink_LinkClicked;
 			// 
 			// Copyright
 			// 
 			AutoScaleDimensions = new SizeF(7F, 17F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(800, 450);
-			Controls.Add(linkLabel2);
-			Controls.Add(linkLabel1);
-			Controls.Add(label1);
+			ClientSize = new Size(224, 83);
+			Controls.Add(GithubLink);
+			Controls.Add(BilibiliLink);
+			Controls.Add(CopyrightLabel);
 			FormBorderStyle = FormBorderStyle.FixedDialog;
 			MaximizeBox = false;
 			MdiChildrenMinimizedAnchorBottom = false;
@@ -80,8 +81,8 @@
 
 		#endregion
 
-		private Label label1;
-		private LinkLabel linkLabel1;
-		private LinkLabel linkLabel2;
+		private Label CopyrightLabel;
+		private LinkLabel BilibiliLink;
+		private LinkLabel GithubLink;
 	}
 }
