@@ -1,12 +1,13 @@
 namespace PhasmophobiaHelper {
 	internal static class Program {
+		public static MainWindow window = new();
 		/// <summary>
 		///  The main entry point for the application.
 		/// </summary>
 		[STAThread]
 		static void Main() {
 			ApplicationConfiguration.Initialize();
-			Application.Run(new MainWindow());
+			Application.Run(window);
 			//Application.EnableVisualStyles();
 			//Application.SetCompatibleTextRenderingDefault(false);
 			//System.Security.Principal.WindowsIdentity identity = System.Security.Principal.WindowsIdentity.GetCurrent();
@@ -15,7 +16,7 @@ namespace PhasmophobiaHelper {
 			//// see https://aka.ms/applicationconfiguration.
 			//if (principal.IsInRole(System.Security.Principal.WindowsBuiltInRole.Administrator)) {
 			//	ApplicationConfiguration.Initialize();
-			//	Application.Run(new MainWindow());
+			//	Application.Run(window);
 			//} else {
 			//	System.Diagnostics.ProcessStartInfo startInfo = new() {
 			//		UseShellExecute = true,

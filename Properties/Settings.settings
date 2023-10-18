@@ -8,5 +8,14 @@
     <Setting Name="RecordGhostSpeedKeyBinding" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">49</Value>
     </Setting>
+    <Setting Name="ResetGhostSpeedKeyBinding" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="TimerKeyBinding" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">51</Value>
+    </Setting>
+    <Setting Name="Opacity" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.95</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

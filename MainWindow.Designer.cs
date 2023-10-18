@@ -23,139 +23,150 @@
 		///  the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent() {
-			GhostSpeedGroup = new GroupBox();
-			GhostSpeedRadioButtons = new RadioButton[] { new RadioButton(), new RadioButton(), new RadioButton(), new RadioButton(), new RadioButton() };
-			KeyBindingGroup = new GroupBox();
-			RecordGhostStepKey = new TextBox();
-			RecordGhostStep = new Label();
-			KeyBindingGroup.SuspendLayout();
+			components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
+			CalcGhostSpeedGroup = new GroupBox();
+			TopMostButton = new Button();
+			SettingButton = new Button();
+			label2 = new Label();
+			label1 = new Label();
+			SpeedResultLabel = new Label();
+			FullSpeedLabel = new Label();
+			NormalSpeedLabel = new Label();
+			SpeedLabel = new Label();
+			TimerGroup = new GroupBox();
+			TimerTextLabel = new Label();
+			TimerProgress = new ProgressBar();
+			GhostTimer = new System.Windows.Forms.Timer(components);
+			DemonHuntingColdDownLabel = new Label();
+			CalcGhostSpeedGroup.SuspendLayout();
+			TimerGroup.SuspendLayout();
 			SuspendLayout();
 			// 
-			// GhostSpeedGroup
+			// CalcGhostSpeedGroup
 			// 
-			GhostSpeedGroup.Controls.Add(GhostSpeedRadioButtons[0]);
-			GhostSpeedGroup.Controls.Add(GhostSpeedRadioButtons[1]);
-			GhostSpeedGroup.Controls.Add(GhostSpeedRadioButtons[2]);
-			GhostSpeedGroup.Controls.Add(GhostSpeedRadioButtons[3]);
-			GhostSpeedGroup.Controls.Add(GhostSpeedRadioButtons[4]);
-			GhostSpeedGroup.Location = new Point(30, 10);
-			GhostSpeedGroup.Name = "GhostSpeedGroup";
-			GhostSpeedGroup.Size = new Size(600, 60);
-			GhostSpeedGroup.TabIndex = 0;
-			GhostSpeedGroup.TabStop = false;
-			GhostSpeedGroup.Text = "鬼魂移动速度";
+			CalcGhostSpeedGroup.Controls.Add(TopMostButton);
+			CalcGhostSpeedGroup.Controls.Add(SettingButton);
+			CalcGhostSpeedGroup.Controls.Add(label2);
+			CalcGhostSpeedGroup.Controls.Add(label1);
+			CalcGhostSpeedGroup.Controls.Add(SpeedResultLabel);
+			CalcGhostSpeedGroup.Controls.Add(FullSpeedLabel);
+			CalcGhostSpeedGroup.Controls.Add(NormalSpeedLabel);
+			CalcGhostSpeedGroup.Controls.Add(SpeedLabel);
+			resources.ApplyResources(CalcGhostSpeedGroup, "CalcGhostSpeedGroup");
+			CalcGhostSpeedGroup.Name = "CalcGhostSpeedGroup";
+			CalcGhostSpeedGroup.TabStop = false;
 			// 
-			// KeyBindingGroup
-			//
-			KeyBindingGroup.Controls.Add(RecordGhostStepKey);
-			KeyBindingGroup.Controls.Add(RecordGhostStep);
-			KeyBindingGroup.Location = new Point(30, 120);
-			KeyBindingGroup.Name = "KeyBindingGroup";
-			KeyBindingGroup.Size = new Size(600, 300);
-			KeyBindingGroup.TabIndex = 1;
-			KeyBindingGroup.TabStop = false;
-			KeyBindingGroup.Text = "快捷键设置";
+			// TopMostButton
 			// 
-			// RecordGhostStepKey
+			resources.ApplyResources(TopMostButton, "TopMostButton");
+			TopMostButton.Name = "TopMostButton";
+			TopMostButton.UseVisualStyleBackColor = true;
+			TopMostButton.Click += TopMostButton_Click;
 			// 
-			RecordGhostStepKey.Location = new Point(90, 28);
-			RecordGhostStepKey.Name = "RecordGhostStepKey";
-			RecordGhostStepKey.Size = new Size(97, 23);
-			RecordGhostStepKey.TabIndex = 1;
-			RecordGhostStepKey.TextAlign = HorizontalAlignment.Center;
-			RecordGhostStepKey.KeyDown += RecordGhostStepKey_KeyDown;
+			// SettingButton
 			// 
-			// RecordGhostStep
+			resources.ApplyResources(SettingButton, "SettingButton");
+			SettingButton.Name = "SettingButton";
+			SettingButton.UseVisualStyleBackColor = true;
+			SettingButton.Click += SettingButton_Click;
 			// 
-			RecordGhostStep.AutoSize = true;
-			RecordGhostStep.Location = new Point(6, 28);
-			RecordGhostStep.Name = "RecordGhostStep";
-			RecordGhostStep.Size = new Size(80, 17);
-			RecordGhostStep.TabIndex = 0;
-			RecordGhostStep.Text = "记录鬼魂脚步";
-			RecordGhostStep.TextAlign = ContentAlignment.MiddleCenter;
-			RecordGhostStep.Click += RecordGhostStep_Click;
+			// label2
 			// 
-			// GhostSpeedRadioButtons[0]
+			resources.ApplyResources(label2, "label2");
+			label2.Name = "label2";
 			// 
-			GhostSpeedRadioButtons[0].AutoSize = true;
-			GhostSpeedRadioButtons[0].Location = new Point(50, 20);
-			GhostSpeedRadioButtons[0].Name = "P50";
-			GhostSpeedRadioButtons[0].Size = new Size(100, 20);
-			GhostSpeedRadioButtons[0].TabIndex = 1;
-			GhostSpeedRadioButtons[0].TabStop = true;
-			GhostSpeedRadioButtons[0].Text = "50%";
-			GhostSpeedRadioButtons[0].UseVisualStyleBackColor = true;
-			GhostSpeedRadioButtons[0].CheckedChanged += P50_CheckedChanged;
+			// label1
 			// 
-			// GhostSpeedRadioButtons[0]
+			resources.ApplyResources(label1, "label1");
+			label1.Name = "label1";
 			// 
-			GhostSpeedRadioButtons[1].AutoSize = true;
-			GhostSpeedRadioButtons[1].Location = new Point(150, 20);
-			GhostSpeedRadioButtons[1].Name = "P75";
-			GhostSpeedRadioButtons[1].Size = new Size(100, 20);
-			GhostSpeedRadioButtons[1].TabIndex = 2;
-			GhostSpeedRadioButtons[1].TabStop = true;
-			GhostSpeedRadioButtons[1].Text = "75%";
-			GhostSpeedRadioButtons[1].UseVisualStyleBackColor = true;
-			GhostSpeedRadioButtons[1].CheckedChanged += P75_CheckedChanged;
+			// SpeedResultLabel
 			// 
-			// GhostSpeedRadioButtons[0]
+			resources.ApplyResources(SpeedResultLabel, "SpeedResultLabel");
+			SpeedResultLabel.Name = "SpeedResultLabel";
 			// 
-			GhostSpeedRadioButtons[2].AutoSize = true;
-			GhostSpeedRadioButtons[2].Location = new Point(250, 20);
-			GhostSpeedRadioButtons[2].Name = "P100";
-			GhostSpeedRadioButtons[2].Size = new Size(100, 20);
-			GhostSpeedRadioButtons[2].TabIndex = 3;
-			GhostSpeedRadioButtons[2].TabStop = true;
-			GhostSpeedRadioButtons[2].Text = "100%";
-			GhostSpeedRadioButtons[2].UseVisualStyleBackColor = true;
-			GhostSpeedRadioButtons[2].CheckedChanged += P100_CheckedChanged;
+			// FullSpeedLabel
 			// 
-			// GhostSpeedRadioButtons[0]
+			resources.ApplyResources(FullSpeedLabel, "FullSpeedLabel");
+			FullSpeedLabel.Name = "FullSpeedLabel";
 			// 
-			GhostSpeedRadioButtons[3].AutoSize = true;
-			GhostSpeedRadioButtons[3].Location = new Point(350, 20);
-			GhostSpeedRadioButtons[3].Name = "P125";
-			GhostSpeedRadioButtons[3].Size = new Size(100, 20);
-			GhostSpeedRadioButtons[3].TabIndex = 4;
-			GhostSpeedRadioButtons[3].TabStop = true;
-			GhostSpeedRadioButtons[3].Text = "125%";
-			GhostSpeedRadioButtons[3].UseVisualStyleBackColor = true;
-			GhostSpeedRadioButtons[3].CheckedChanged += P125_CheckedChanged;
+			// NormalSpeedLabel
 			// 
-			// GhostSpeedRadioButtons[0]
+			resources.ApplyResources(NormalSpeedLabel, "NormalSpeedLabel");
+			NormalSpeedLabel.Name = "NormalSpeedLabel";
 			// 
-			GhostSpeedRadioButtons[4].AutoSize = true;
-			GhostSpeedRadioButtons[4].Location = new Point(450, 20);
-			GhostSpeedRadioButtons[4].Name = "P150";
-			GhostSpeedRadioButtons[4].Size = new Size(100, 20);
-			GhostSpeedRadioButtons[4].TabIndex = 5;
-			GhostSpeedRadioButtons[4].TabStop = true;
-			GhostSpeedRadioButtons[4].Text = "150%";
-			GhostSpeedRadioButtons[4].UseVisualStyleBackColor = true;
-			GhostSpeedRadioButtons[4].CheckedChanged += P150_CheckedChanged;
+			// SpeedLabel
+			// 
+			resources.ApplyResources(SpeedLabel, "SpeedLabel");
+			SpeedLabel.Name = "SpeedLabel";
+			// 
+			// TimerGroup
+			// 
+			TimerGroup.Controls.Add(DemonHuntingColdDownLabel);
+			TimerGroup.Controls.Add(TimerTextLabel);
+			TimerGroup.Controls.Add(TimerProgress);
+			resources.ApplyResources(TimerGroup, "TimerGroup");
+			TimerGroup.Name = "TimerGroup";
+			TimerGroup.TabStop = false;
+			TimerGroup.Paint += TimerGroup_Paint;
+			// 
+			// TimerTextLabel
+			// 
+			resources.ApplyResources(TimerTextLabel, "TimerTextLabel");
+			TimerTextLabel.BackColor = Color.Transparent;
+			TimerTextLabel.Name = "TimerTextLabel";
+			// 
+			// TimerProgress
+			// 
+			resources.ApplyResources(TimerProgress, "TimerProgress");
+			TimerProgress.MarqueeAnimationSpeed = 1000;
+			TimerProgress.Maximum = 180;
+			TimerProgress.Name = "TimerProgress";
+			TimerProgress.Step = 1;
+			// 
+			// GhostTimer
+			// 
+			GhostTimer.Interval = 1000;
+			GhostTimer.Tick += GhostTimer_Tick;
+			// 
+			// DemonHuntingColdDownLabel
+			// 
+			resources.ApplyResources(DemonHuntingColdDownLabel, "DemonHuntingColdDownLabel");
+			DemonHuntingColdDownLabel.Name = "DemonHuntingColdDownLabel";
 			// 
 			// MainWindow
 			// 
-			AutoScaleDimensions = new SizeF(7F, 17F);
+			resources.ApplyResources(this, "$this");
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(664, 461);
-			Controls.Add(KeyBindingGroup);
-			Controls.Add(GhostSpeedGroup);
+			Controls.Add(TimerGroup);
+			Controls.Add(CalcGhostSpeedGroup);
+			FormBorderStyle = FormBorderStyle.FixedDialog;
+			MaximizeBox = false;
 			Name = "MainWindow";
-			Text = "恐鬼症记录器";
-			KeyBindingGroup.ResumeLayout(false);
-			KeyBindingGroup.PerformLayout();
+			Opacity = 0.95D;
+			FormClosed += MainWindow_FormClosed;
+			CalcGhostSpeedGroup.ResumeLayout(false);
+			CalcGhostSpeedGroup.PerformLayout();
+			TimerGroup.ResumeLayout(false);
+			TimerGroup.PerformLayout();
 			ResumeLayout(false);
 		}
 
 		#endregion
-
-		private GroupBox GhostSpeedGroup;
-		private GroupBox KeyBindingGroup;
-		private TextBox RecordGhostStepKey;
-		private Label RecordGhostStep;
-		private RadioButton[] GhostSpeedRadioButtons;
+		private GroupBox CalcGhostSpeedGroup;
+		private Label FullSpeedLabel;
+		private Label NormalSpeedLabel;
+		private Label SpeedLabel;
+		private Label label2;
+		private Label label1;
+		private Label SpeedResultLabel;
+		private GroupBox TimerGroup;
+		private ProgressBar TimerProgress;
+		private Label TimerTextLabel;
+		private System.Windows.Forms.Timer GhostTimer;
+		private Button SettingButton;
+		private Button TopMostButton;
+		private Label DemonHuntingColdDownLabel;
 	}
 }

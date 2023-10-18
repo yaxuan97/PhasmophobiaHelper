@@ -46,5 +46,41 @@ namespace PhasmophobiaHelper.Properties {
                 this["RecordGhostSpeedKeyBinding"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("50")]
+        public int ResetGhostSpeedKeyBinding {
+            get {
+                return ((int)(this["ResetGhostSpeedKeyBinding"]));
+            }
+            set {
+                this["ResetGhostSpeedKeyBinding"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("51")]
+        public int TimerKeyBinding {
+            get {
+                return ((int)(this["TimerKeyBinding"]));
+            }
+            set {
+                this["TimerKeyBinding"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.95")]
+        public double Opacity {
+            get {
+                return ((double)(this["Opacity"]));
+            }
+            set {
+                this["Opacity"] = value;
+            }
+        }
     }
 }

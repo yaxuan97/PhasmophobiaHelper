@@ -117,4 +117,466 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;TopMostButton.Name" xml:space="preserve">
+    <value>TopMostButton</value>
+  </data>
+  <data name="&gt;&gt;TopMostButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TopMostButton.Parent" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;TopMostButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SettingButton.Name" xml:space="preserve">
+    <value>SettingButton</value>
+  </data>
+  <data name="&gt;&gt;SettingButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SettingButton.Parent" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;SettingButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;SpeedResultLabel.Name" xml:space="preserve">
+    <value>SpeedResultLabel</value>
+  </data>
+  <data name="&gt;&gt;SpeedResultLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SpeedResultLabel.Parent" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;SpeedResultLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;FullSpeedLabel.Name" xml:space="preserve">
+    <value>FullSpeedLabel</value>
+  </data>
+  <data name="&gt;&gt;FullSpeedLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FullSpeedLabel.Parent" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;FullSpeedLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;NormalSpeedLabel.Name" xml:space="preserve">
+    <value>NormalSpeedLabel</value>
+  </data>
+  <data name="&gt;&gt;NormalSpeedLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NormalSpeedLabel.Parent" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;NormalSpeedLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;SpeedLabel.Name" xml:space="preserve">
+    <value>SpeedLabel</value>
+  </data>
+  <data name="&gt;&gt;SpeedLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SpeedLabel.Parent" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;SpeedLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="CalcGhostSpeedGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="CalcGhostSpeedGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 111</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CalcGhostSpeedGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="CalcGhostSpeedGroup.Text" xml:space="preserve">
+    <value>推测鬼魂速度</value>
+  </data>
+  <data name="&gt;&gt;CalcGhostSpeedGroup.Name" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;CalcGhostSpeedGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CalcGhostSpeedGroup.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CalcGhostSpeedGroup.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TopMostButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="TopMostButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 64</value>
+  </data>
+  <data name="TopMostButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 34</value>
+  </data>
+  <data name="TopMostButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="TopMostButton.Text" xml:space="preserve">
+    <value>窗口置顶</value>
+  </data>
+  <data name="&gt;&gt;TopMostButton.Name" xml:space="preserve">
+    <value>TopMostButton</value>
+  </data>
+  <data name="&gt;&gt;TopMostButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TopMostButton.Parent" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;TopMostButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="SettingButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 64</value>
+  </data>
+  <data name="SettingButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 34</value>
+  </data>
+  <data name="SettingButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="SettingButton.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="&gt;&gt;SettingButton.Name" xml:space="preserve">
+    <value>SettingButton</value>
+  </data>
+  <data name="&gt;&gt;SettingButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SettingButton.Parent" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;SettingButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>289, 62</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 36</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>289, 26</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 36</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="SpeedResultLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 28</value>
+  </data>
+  <data name="SpeedResultLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 32</value>
+  </data>
+  <data name="SpeedResultLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="SpeedResultLabel.Text" xml:space="preserve">
+    <value>0.0 m/s</value>
+  </data>
+  <data name="SpeedResultLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;SpeedResultLabel.Name" xml:space="preserve">
+    <value>SpeedResultLabel</value>
+  </data>
+  <data name="&gt;&gt;SpeedResultLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SpeedResultLabel.Parent" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;SpeedResultLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="FullSpeedLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FullSpeedLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 72</value>
+  </data>
+  <data name="FullSpeedLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 17</value>
+  </data>
+  <data name="FullSpeedLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="FullSpeedLabel.Text" xml:space="preserve">
+    <value>满加速推测</value>
+  </data>
+  <data name="&gt;&gt;FullSpeedLabel.Name" xml:space="preserve">
+    <value>FullSpeedLabel</value>
+  </data>
+  <data name="&gt;&gt;FullSpeedLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FullSpeedLabel.Parent" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;FullSpeedLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="NormalSpeedLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NormalSpeedLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 36</value>
+  </data>
+  <data name="NormalSpeedLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 17</value>
+  </data>
+  <data name="NormalSpeedLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="NormalSpeedLabel.Text" xml:space="preserve">
+    <value>无仇恨推测</value>
+  </data>
+  <data name="&gt;&gt;NormalSpeedLabel.Name" xml:space="preserve">
+    <value>NormalSpeedLabel</value>
+  </data>
+  <data name="&gt;&gt;NormalSpeedLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NormalSpeedLabel.Parent" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;NormalSpeedLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="SpeedLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SpeedLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 36</value>
+  </data>
+  <data name="SpeedLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 17</value>
+  </data>
+  <data name="SpeedLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="SpeedLabel.Text" xml:space="preserve">
+    <value>当前速度</value>
+  </data>
+  <data name="&gt;&gt;SpeedLabel.Name" xml:space="preserve">
+    <value>SpeedLabel</value>
+  </data>
+  <data name="&gt;&gt;SpeedLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SpeedLabel.Parent" xml:space="preserve">
+    <value>CalcGhostSpeedGroup</value>
+  </data>
+  <data name="&gt;&gt;SpeedLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="DemonHuntingColdDownLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DemonHuntingColdDownLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 103</value>
+  </data>
+  <data name="DemonHuntingColdDownLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 17</value>
+  </data>
+  <data name="DemonHuntingColdDownLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="DemonHuntingColdDownLabel.Text" xml:space="preserve">
+    <value>恶魔猎杀CD结束</value>
+  </data>
+  <data name="&gt;&gt;DemonHuntingColdDownLabel.Name" xml:space="preserve">
+    <value>DemonHuntingColdDownLabel</value>
+  </data>
+  <data name="&gt;&gt;DemonHuntingColdDownLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DemonHuntingColdDownLabel.Parent" xml:space="preserve">
+    <value>TimerGroup</value>
+  </data>
+  <data name="&gt;&gt;DemonHuntingColdDownLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TimerTextLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TimerTextLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 58</value>
+  </data>
+  <data name="TimerTextLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 17</value>
+  </data>
+  <data name="TimerTextLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="TimerTextLabel.Text" xml:space="preserve">
+    <value>99: 99</value>
+  </data>
+  <data name="&gt;&gt;TimerTextLabel.Name" xml:space="preserve">
+    <value>TimerTextLabel</value>
+  </data>
+  <data name="&gt;&gt;TimerTextLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TimerTextLabel.Parent" xml:space="preserve">
+    <value>TimerGroup</value>
+  </data>
+  <data name="&gt;&gt;TimerTextLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="TimerProgress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 45</value>
+  </data>
+  <data name="TimerProgress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>588, 40</value>
+  </data>
+  <data name="TimerProgress.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TimerProgress.Name" xml:space="preserve">
+    <value>TimerProgress</value>
+  </data>
+  <data name="&gt;&gt;TimerProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TimerProgress.Parent" xml:space="preserve">
+    <value>TimerGroup</value>
+  </data>
+  <data name="&gt;&gt;TimerProgress.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TimerGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 129</value>
+  </data>
+  <data name="TimerGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 123</value>
+  </data>
+  <data name="TimerGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="TimerGroup.Text" xml:space="preserve">
+    <value>计时器</value>
+  </data>
+  <data name="&gt;&gt;TimerGroup.Name" xml:space="preserve">
+    <value>TimerGroup</value>
+  </data>
+  <data name="&gt;&gt;TimerGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TimerGroup.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TimerGroup.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="GhostTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>624, 259</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>恐鬼症记录器</value>
+  </data>
+  <data name="&gt;&gt;GhostTimer.Name" xml:space="preserve">
+    <value>GhostTimer</value>
+  </data>
+  <data name="&gt;&gt;GhostTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainWindow</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
